@@ -1,3 +1,4 @@
+###
 mémo Git
 
 git --version : vérif version Git installée
@@ -9,3 +10,98 @@ cd : change directories
 git init : initialiser git sur le fichier 
 ls : liste les fichiers dans un dossier
 git status : voir ce qu'il y a dans le directory
+pwd : vérifier le directory actuel
+git add <file> : tracker (stage) un fichier
+git restore --staged <file> : untracker le fichier (si erreur)
+git commit -m "message" : prendre une photo d'un changement sur le fichier tracké
+git commit -a -m "message" : prendre une photo d'un changement sur le fichier 
+non tracké 
+git commit --allow-empty -m "Start project" : créer un commit vide
+git commit --no-edit : commit avec le message antérieur
+git commit --amend --no-edit : commit avec ajout rapide des derniers chgts au dernier commit,
+garder le message
+git log : voir les derniers commits
+git log --oneline : résumé derniers commits
+git log --stat : voir les fichiers changés dans les derniers commits
+git tag v1.0 : créer un tag allégé
+git tag -a v1.0 -m "Version 1.0 release" : créer un tag annoté
+git tag v1.1 1a2b3c4d : tagger un ancien commit avec un nouveau hash (v1.1 au lieu de 1a2b3c4d)
+git tag : voir tous les tags du repository
+git show v1.0 : voir le commit v1.0
+git push origin v1.0 : pousser un seul tag sur le remote repository pour que tout le monde le voit
+git push --tags : pousser tous les tags
+git tag -d v1.0 : enlever un tag localement
+git push origin --delete tag v1.0 : enlever un tag du remote repository
+git tag -f v1.0 <new-commit-hash> : renommer un tag
+git push --force origin v1.0 : déplacer le tag sur un commit différent + renommer la commande
+git push origin <tagname> : voir un tag sur la remote 
+git push --tags : voir tous les tags sur la remote
+git push --force origin <tagname> : écrasage de tag sur la remote (concerne tous les gens de la remote)
+git stash : sauvegarde sans commit les derniers changements
+git stash push -m "message" : sauvegarde sans commit les derniers changements avec un message
+git stash list : liste tous les stashs (sauvegarde sans commit)
+git stash branch <branchname> : créé une branche à partir d'un stash
+git stash show : voir les changements du stash (résumé)
+git stash show -p : voir les lignes exactes changées sur stach le plus récent
+git stash apply : montre changements les plus récents dans les stashs
+git stash apply stash@{n} : restaurer un stach spécifique dans une liste
+git stash pop : appliquer le stash le plus récent et suppression
+git stash drop : supprimer un stash 
+git stash clear : supprimer tous les stashs en une fois
+git stash branch : supprimer stashs d'une branche
+git log : montre l'historique complet des commits
+git log --oneline : montre un résumé des commits
+git show <commit> : montre les détails d'un commit spécifique
+git diff : voir les changements non stagés
+git diff --staged : voir les changements stagés
+git help <command> : voir la page d'instruction pour une commande
+git <command> --help : voir de l'aide pour une commande (commme commande précédente)
+git <command> -h : voir un résumé des options
+git help --all : voir toutes les commandes Git possibles
+git help -g : lister les guides et concepts
+git branch hello-world-images : créer une nouvelle branche
+git checkout hello-world-images : changer de branche
+git branch -d hello-world-images : supprimer la branche hello-world-images 
+git merge : fusionner une branche à la branche actuelle
+git merge --no-ff : toujours créer un commit fusionné
+git merge --squash : combiner les changements en un seul commit
+git merge --abort : mettre fin à une fusion en cours
+Working Directory : là où changements réalisés
+git add : sauvegarde les changements
+git commit : sauvegarde les changements dans le repository
+git push : sauvegarde les changements avec les collaborateurs
+git status : voir ce qu'il se passe dans git (stages, commits, branches..)
+Undo/Amend : réparer les erreurs (git restore, git reset, git commit --amend)
+
+Résumé des bonnes pratiques Git
+Commit souvent
+Ecrir des messages de commit clairs
+Utiliser des branches
+Pull avant de Push
+Faire l'inventaire des changements avant de commit
+Garder les repositories petits
+Utiliser .gitignore
+Etiqueter les releases
+
+glossaire:
+
+Branch : 
+Checkout
+Clone
+Commit
+Conflict
+Fetch
+Fork
+HEAD
+Index (Staging Area)
+Merge
+Origin
+Pull
+Push
+Rebase
+Remote
+Repository (Repo)
+Stash
+Tag
+Upstream
+Working Directory
