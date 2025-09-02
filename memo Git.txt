@@ -1,0 +1,11 @@
+mémo Git
+
+git --version : vérif version Git installée
+sudo apt-get install git : installation via Ubuntu
+git config --global user.name "Your name" : établir un nom utilisateur global
+git config --global user.email "user@example.com" : établir une adresse mail
+git config --list : liste des configurations
+cd : change directories
+git init : initialiser git sur le fichier 
+ls : liste les fichiers dans un dossier
+git status : voir ce qu'il y a dans le directory
