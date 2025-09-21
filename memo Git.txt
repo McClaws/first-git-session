@@ -1,18 +1,25 @@
 ###
 mémo Git
 
+
+#Initialisations
 git --version : vérif version Git installée
+winget install -e –id Git.Git –source winget : installer via Windows
 sudo apt-get install git : installation via Ubuntu
 git config --global user.name "Your name" : établir un nom utilisateur global
 git config --global user.email "user@example.com" : établir une adresse mail
-git config --list : liste des configurations
-cd : change directories
-git init : initialiser git sur le fichier 
+
+#Déplacement dans les directories et fichiers
 ls : liste les fichiers dans un dossier
-git status : voir ce qu'il y a dans le directory
+cd : change directories
 pwd : vérifier le directory actuel
-git add <file> : tracker (stage) un fichier
-git restore --staged <file> : untracker le fichier (si erreur)
+
+
+git config --list : liste des configurations
+git init : initialiser git sur le fichier 
+git status : voir ce qu'il y a dans le directory
+git add <file> : stager un fichier
+git restore --staged <file> : unstager le fichier (si erreur)
 git commit -m "message" : prendre une photo d'un changement sur le fichier tracké
 git commit -a -m "message" : prendre une photo d'un changement sur le fichier 
 non tracké 
@@ -102,6 +109,8 @@ Rebase
 Remote
 Repository (Repo)
 Stash
+Staging : ajouter un fichier en liste d'attente pour prochain commit (add)
 Tag
+Tracking : tout fichier suivi via Git (stagé, commit, etc), pas nécessairement stagés
 Upstream
 Working Directory
