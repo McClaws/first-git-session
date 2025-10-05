@@ -146,6 +146,6 @@ Staging : ajouter un fichier en liste d'attente pour prochain commit (add)
 Tag : marquage d'un commit spécifique important (habituellement pour des sorties de versions importantes)
 Tracking : tout fichier suivi via Git (stage, commit, etc), pas nécessairement stagés
 Upstream : branche par défaut où tracking et pulls se font (sur un local distant)
-Working Directory : copie de travail où modifications ont lieu avant stages/commits
+Working Directory : copie de travail où modifications ont lieu avant les stages et les commits
 
 Commandes generales presentes!
